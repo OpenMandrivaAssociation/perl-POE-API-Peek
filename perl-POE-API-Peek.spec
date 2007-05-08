@@ -1,8 +1,8 @@
 %define realname   POE-API-Peek
 
 Name:		perl-%{realname}
-Version:    1.06
-Release:    %mkrel 2
+Version:    1.0802
+Release:    %mkrel 1
 License:	Artistic
 Group:		Development/Perl
 Summary:    Peek into the internals of a running POE environment

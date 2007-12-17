@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:    Peek into the internals of a running POE environment
 Source0:    http://search.cpan.org/CPAN/authors/id/S/SU/SUNGO/%{realname}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel perl-Devel-Size perl-POE
 BuildArch: noarch
 

@@ -3,7 +3,7 @@
 Name:		perl-%{module}
 Version:    1.30
 Release:    %mkrel 1
-Epoch:      0
+Epoch:      1
 License:	Artistic
 Group:		Development/Perl
 Summary:    Peek into the internals of a running POE environment

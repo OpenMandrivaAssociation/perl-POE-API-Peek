@@ -1,16 +1,17 @@
-%define realname   POE-API-Peek
+%define module   POE-API-Peek
 
-Name:		perl-%{realname}
-Version:    1.0802
+Name:		perl-%{module}
+Version:    1.30
 Release:    %mkrel 1
 License:	Artistic
 Group:		Development/Perl
 Summary:    Peek into the internals of a running POE environment
-Source0:    http://search.cpan.org/CPAN/authors/id/S/SU/SUNGO/%{realname}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel perl-Devel-Size perl-POE
+Url:		http://search.cpan.org/dist/%{module}
+Source:		http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.gz
+BuildRequires:	perl(Devel::Size)
+BuildRequires:	perl(POE)
 BuildArch: noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 POE::API::Peek extends the POE::Kernel interface to provide clean access to 
@@ -28,11 +29,11 @@ data is also available.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)

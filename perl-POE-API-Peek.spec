@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:    1.30
-Release:    %mkrel 1
+Release:    %mkrel 2
 Epoch:      1
 License:	Artistic
 Group:		Development/Perl

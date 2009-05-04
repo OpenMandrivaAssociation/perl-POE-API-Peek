@@ -1,7 +1,7 @@
 %define module   POE-API-Peek
 
 Name:		perl-%{module}
-Version:    1.32
+Version:    1.34
 Release:    %mkrel 1
 Epoch:      1
 License:	Artistic

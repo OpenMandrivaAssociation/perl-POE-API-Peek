@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.gz
 BuildRequires:	perl(Devel::Size)
 BuildRequires:	perl(POE)
+BuildRequires:	perl(Test::NoWarnings)
 BuildArch: noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 

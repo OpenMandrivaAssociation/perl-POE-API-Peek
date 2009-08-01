@@ -1,19 +1,22 @@
-%define module   POE-API-Peek
+%define upstream_name    POE-API-Peek
+%define upstream_version 1.34
 
-Name:		perl-%{module}
-Version:    1.34
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
 Epoch:      1
+
+Summary:    Peek into the internals of a running POE environment
 License:	Artistic
 Group:		Development/Perl
-Summary:    Peek into the internals of a running POE environment
-Url:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl(Devel::Size)
 BuildRequires:	perl(POE)
 BuildRequires:	perl(Test::NoWarnings)
 BuildArch: noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 POE::API::Peek extends the POE::Kernel interface to provide clean access to 
@@ -21,7 +24,7 @@ Kernel internals in a cross-version compatible manner. Other calculated
 data is also available.
 
 %prep
-%setup -q -n POE-API-Peek-%{version}
+%setup -q -n POE-API-Peek-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -41,4 +44,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{perl_vendorlib}/POE
 %{_mandir}/man3/*
-

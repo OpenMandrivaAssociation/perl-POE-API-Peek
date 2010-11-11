@@ -1,5 +1,5 @@
 %define upstream_name    POE-API-Peek
-%define upstream_version 1.34
+%define upstream_version 2.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}

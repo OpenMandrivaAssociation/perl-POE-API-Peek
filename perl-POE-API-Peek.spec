@@ -1,16 +1,16 @@
 %define upstream_name    POE-API-Peek
-%define upstream_version 2.17
+%define upstream_version 2.20
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 Epoch:		1
 
 Summary:	Peek into the internals of a running POE environment
 License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/POE/POE-API-Peek-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Devel::Size)
@@ -88,4 +88,5 @@ make test
 
 * Tue Jan 24 2006 Michael Scherer <misc@mandriva.org> 1.06-1mdk
 - First Mandriva package
+
 

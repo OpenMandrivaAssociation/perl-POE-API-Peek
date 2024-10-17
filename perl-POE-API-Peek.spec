@@ -9,7 +9,7 @@ Epoch:		1
 Summary:	Peek into the internals of a running POE environment
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/POE-API-Peek-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
